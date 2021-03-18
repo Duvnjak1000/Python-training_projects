@@ -1,3 +1,4 @@
-# example string
-string = "THIS SHOULD BE lOWERcASE!"
-print(string.lower())
+str_one = "Happy"
+str_two = "Day!"
+
+print("%s %s" % (str_one, str_two))

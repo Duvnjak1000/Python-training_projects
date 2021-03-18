@@ -15,3 +15,6 @@ while True:
     if choice.lower() != "y" and choice.lower() != "yes":
         break
 
+# we can use the format() method, with placeholders like {0}:
+# print("{0} {1}".format(str_one, str_two))
+    #In programming, counting starts with 0. That's why {0} means the first string.
