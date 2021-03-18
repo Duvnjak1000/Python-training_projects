@@ -1,9 +1,9 @@
 secret = 22
 
 
-for x in range(5):
+while True:
     guess = int(input("Guess the secret number (between 1 and 30): "))
-    print (x)
+
     if guess == secret:
         print("You've guessed it - congratulations! It's number 22.")
         break
