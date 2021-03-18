@@ -1,4 +1,4 @@
-print("Welcome! This is UC (unit converter) for converting miles into kilometers.")
+print("Welcome! This is UC (unit converter) for converting Miles into Kilometers.")
 
 while True:
     print("Please enter a number of miles for conversion into kilometers. Enter ONLY a number!")
