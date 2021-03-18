@@ -5,4 +5,4 @@ if age > 12 and age < 20:
 
 print("the END")
 
-#Note that if you use AND, the whole sentence can be true only if both conditions are true:
+#Note that if you use AND operator, the whole sentence can be true only if both conditions are true:
