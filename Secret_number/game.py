@@ -7,5 +7,8 @@ while True:
     if guess == secret:
         print("You've guessed it - congratulations! It's number 22.")
         break
-    else:
-        print("Sorry, your guess is not correct... The secret number is not " + str(guess))
+    elif guess > secret:
+        print("Sorry, your guess is not correct...Try smaller value than specified " + str(guess))
+    elif guess < secret:
+        print("Sorry, your guess is not correct...Try higher value than specified " + str (guess))
+
