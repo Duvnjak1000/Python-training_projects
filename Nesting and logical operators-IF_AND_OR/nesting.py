@@ -1,8 +1,8 @@
-age = int(input ("Please enter Your age: "))
+while True:
+    name = input("Please, enter Your name: ")
 
-if age > 12 and age < 20:
-        print("You are a teenager! ")
-
-print("the END")
-
-#Note that if you use AND operator, the whole sentence can be true only if both conditions are true:
+    if name == "Tina" or name == "TINA" or name =="tina":
+        print("Hello, Tina!")
+        break
+    else:
+        print("Please try again! ")
