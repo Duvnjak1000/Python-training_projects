@@ -6,3 +6,5 @@ while True:
         break
     else:
         print("Please try again! ")
+
+#In this case, at least one operator must be correct for the whole if sentence to be True.
