@@ -1,6 +1,6 @@
 import random
 
-secret = radnom.randit(1, 30)
+secret = random.randit(1, 30)
 attempts = 0
 
 while True:
