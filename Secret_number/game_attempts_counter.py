@@ -15,8 +15,8 @@ while True:
     attempts += 1
 
     if guess == secret:
-        with open("score.txt", "w") as score_file:
-            score_file.write(str(attempts))
+        with open("score.txt", "w") as score_file: #This part is for
+            score_file.write(str(attempts))        #writing number of attempts
         print("You've guessed it - congratulations! It's number " + str(secret))
         print("Attempts needed: " + str(attempts))
         break
