@@ -3,6 +3,10 @@ import random
 secret = random.randint(1, 30)
 attempts = 0
 
+with open("score.txt", "r") as score_file:
+    best_score = int(score_file.read())
+    print("Top score: " + str(best_score))
+
 while True:
     guess = int(input("Guess the secret number (between 1 and 30): "))
     attempts += 1
