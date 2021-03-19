@@ -5,7 +5,7 @@ attempts = 0
 
 if guess == secret:
     with open("score.txt", "w") as score_file:
-        score_file.write(str)(attempts))
+        score_file.write(str(attempts))
 
 
     #This will:
