@@ -3,9 +3,10 @@ import random
 secret = random.randint(1, 30)
 attempts = 0
 
-with open("score.txt", "r") as score_file:
-    best_score = int(score_file.read())
-    print("Top score: " + str(best_score))
+if guess == secret:
+    with open("score.txt", "w") as score_file:
+        score_file.write(str)(attempts))
+
 
     #This will:
 #open the score.txt file,
