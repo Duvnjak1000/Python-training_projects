@@ -13,10 +13,12 @@ attempts = 0
 while True:
     guess = int(input("Guess the secret number (between 1 and 30): "))
     attempts += 1
-
-    if guess == secret:
-        with open("score.txt", "w") as score_file: #This part is for
-            score_file.write(str(attempts))        #writing number of attempts
+                                                              #We can compare our best_score to the number of attempts and see which one is a lower number (remember: lower is better).
+    if guess == secret:                                       #If attempts is lower than best_score, we write the attempts number into the file
+        if guess == secret:
+            if attempts < best_score:
+                with open("score.txt", "w") as score_file:
+                    score_file.write(str(attempts))
         print("You've guessed it - congratulations! It's number " + str(secret))
         print("Attempts needed: " + str(attempts))
         break
