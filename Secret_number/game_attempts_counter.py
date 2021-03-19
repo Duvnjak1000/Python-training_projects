@@ -3,10 +3,6 @@ import random
 secret = random.randint(1, 30)
 attempts = 0
 
-if guess == secret:
-    with open("score.txt", "w") as score_file:
-        score_file.write(str(attempts))
-
 
     #This will:
 #open the score.txt file,
@@ -19,6 +15,8 @@ while True:
     attempts += 1
 
     if guess == secret:
+        with open("score.txt", "w") as score_file:
+            score_file.write(str(attempts))
         print("You've guessed it - congratulations! It's number " + str(secret))
         print("Attempts needed: " + str(attempts))
         break
