@@ -14,6 +14,9 @@ while True:
 
     if guess == secret:
         score_list.append(attempts)
+
+        with open("score_list.json", "w") as score_file:
+            score_file.write(json.dumps(score_list))
         print("You've guessed it - congratulations! It's number " + str(secret))
         print("Attempts needed: " + str(attempts))
         break
