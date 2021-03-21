@@ -15,7 +15,6 @@ while True:
     attempts += 1
                                                               #We can compare our best_score to the number of attempts and see which one is a lower number (remember: lower is better).
     if guess == secret:                                       #If attempts is lower than best_score, we write the attempts number into the file
-        if guess == secret:
             if attempts < best_score:
                 with open("score.txt", "w") as score_file:
                     score_file.write(str(attempts))
