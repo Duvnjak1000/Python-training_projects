@@ -1,7 +1,12 @@
+import json
 import random
 
 secret = random.randint(1, 30)
 attempts = 0
+
+with open ("score_list.json", "r")as score_file:
+    score_list = json.loads(score_file.read())
+    print("Top scores: " + str(score_list))
 
 while True:
     guess = int(input("Guess the secret number (between 1 and 30): "))
