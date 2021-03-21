@@ -8,6 +8,9 @@ with open ("score_list.json", "r")as score_file:
     score_list = json.loads(score_file.read())
     print("Top scores: " + str(score_list))
 
+score.list.sort()
+print(score_list[:3])
+
 while True:
     guess = int(input("Guess the secret number (between 1 and 30): "))
     attempts += 1
