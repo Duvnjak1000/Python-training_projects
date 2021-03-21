@@ -13,6 +13,7 @@ while True:
     attempts += 1
 
     if guess == secret:
+        score_list.append(attempts)
         print("You've guessed it - congratulations! It's number " + str(secret))
         print("Attempts needed: " + str(attempts))
         break
