@@ -8,7 +8,7 @@ with open ("score_list.json", "r")as score_file:
     score_list = json.loads(score_file.read())
     print("Top scores: " + str(score_list))
 
-score.list.sort()
+score_list.sort()
 print(score_list[:3])
 
 while True:
