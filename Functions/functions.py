@@ -1,6 +1,7 @@
 def say_hello(name):
-    print("Hello {0}!".format(name))
+    return "Hello {0}!".format(name)
 
-say_hello(name="Igor")
+text = say_hello(name="Igor")
 
+print(text)
 
