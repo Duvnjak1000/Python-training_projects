@@ -1,4 +1,4 @@
-import random
+import
 from datetime import datetime
 
 random_num = random.randint(1, 50)
