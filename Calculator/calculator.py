@@ -1,6 +1,6 @@
 first_value = int(input("Enter the first value: "))
 
-second_value= int(input("Enter the second value: "))
+second_value = int(input("Enter the second value: "))
 
 operation = input("Please choose the right arithmetic operation (+, -, *, /): ")
 
